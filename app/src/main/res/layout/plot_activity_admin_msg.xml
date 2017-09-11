@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E8E8"
+    android:orientation="vertical">
+
+
+<include layout="@layout/plot_common_log_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:text="头像" />
+
+        <ImageView
+            android:id="@+id/userImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/select_img"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/ic_launcher_round" />
+
+        <ImageView
+            android:id="@+id/select_img"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_btn_next"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#E8E8E8"/>
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:text="电话号码" />
+
+        <TextView
+            android:id="@+id/phone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/select1_img"
+            android:layout_marginRight="15dp"
+           android:text="12122313" />
+
+        <ImageView
+            android:id="@+id/select1_img"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_btn_next"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#E8E8E8"/>
+
+    <RelativeLayout
+        android:id="@+id/relative3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:text="用户名" />
+
+        <TextView
+            android:id="@+id/username_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/select2_img"
+            android:layout_marginRight="15dp"
+            android:text="qewwe" />
+
+        <ImageView
+            android:id="@+id/select2_img"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_btn_next"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#E8E8E8"/>
+
+    <RelativeLayout
+        android:id="@+id/relative4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:text="登录密码" />
+
+        <TextView
+            android:id="@+id/password_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/select3_img"
+            android:layout_marginRight="15dp"
+            android:text="1213123" />
+
+        <ImageView
+            android:id="@+id/select3_img"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_btn_next"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative5"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:text="昵称" />
+
+        <TextView
+            android:id="@+id/level_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp"
+            android:text="活动发起人" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

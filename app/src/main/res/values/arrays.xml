@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nature">
+        <item>机械化部队</item>
+        <item>科技化部队</item>
+        <item>原始化部队</item>
+        <item>超前线部队</item>
+    </string-array>
+</resources>

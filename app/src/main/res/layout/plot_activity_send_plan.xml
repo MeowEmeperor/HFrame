@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E8E8"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/plot_common_log_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="活动名称"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_bg"
+            android:ems="8"
+            android:hint="未设定"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#E8E8E8"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="活动性质"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/nature_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_marginLeft="100dp"
+            android:spinnerMode="dialog" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#E8E8E8"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="信息导入"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/select_excel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择文件" />
+
+        <TextView
+            android:id="@+id/excel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="未选择文件"
+            android:ems="2"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:id="@+id/excel_model"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="表格模板"/>
+            <ImageView
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_btn_next"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#E8E8E8"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="每组人数"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_bg"
+            android:ems="8"
+            android:hint="未设定"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/setting_plan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:text="路线设置"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_btn_next" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:text="一键分组"/>
+    </LinearLayout>
+</LinearLayout>
